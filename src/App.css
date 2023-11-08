@@ -1,38 +1,195 @@
-.App {
-  text-align: center;
+
+body{
+  background-color: rgba(0, 0, 0, 0.90) !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header,.foot{
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.90);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.logo{
+  filter: invert();
+  width: 45px;
+  height: 40px;
+}
+.mainNav{
+  z-index: 101;
+position: sticky;
+top: 0;
+}
+.mainNav .navHeading{
+  font-family: 'Poppins', sans-serif;
+font-weight: 800;
+font-size: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.header{
+  height: 80px;
+  background: linear-gradient(to bottom ,rgba(0,0,0,1)0%,rgba(0,0,0,)100%);
+}
+.foot{
+  margin-top: 79px;
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+}
+.hero{
+  height: 100vh;
+}
+.cardImage{
+  width: 100%;
+  object-fit: cover;
+  height: 350px;
+}
+.fullCard {
+  text-align: center;
+border-radius: 10px;}
+.cardBut{
+ width: 300px;
+}
+.fullCard .cardBut:hover{
+  color: rgb(162, 162, 162);
+}
+.cardAddress{
+  font-size: medium;
+}
+.carImg{
+  width: 100%;
+  height: 85vh;
+  object-fit: cover;
+}
+.carHeading{
+font-size: 95px;
+text-align: left;
+margin-bottom: 100px;
+color: rgba(0, 0, 0, 0.718);
+font-family: 'Poppins', sans-serif;
+font-weight: 800;
+}
+.carHeading2{
+font-size: 80px;
+text-align: left;
+margin-bottom: 100px;
+color: rgba(255, 255, 255, 0.718);
+font-family: 'Poppins', sans-serif;
+font-weight: 800;
+}
+@media screen and (max-width: 768px) {
+ .carHeading,.carHeading2{
+font-size: 50px;  }
+}
+
+.single h1{
+text-align: center;
+}
+.single
+.singleImg{
+  padding-top: 80px;
+  width: 300px;
+  height: 450px;
+  object-fit: cover;
+
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  row-gap: 100px;
+}
+.container h1{
+    font-family: 'Poppins', sans-serif;
+letter-spacing: -1px;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.637);
+font-size: 1.5rem;
+}
+.mainDetails{
+  padding-right: 200px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.details .restName{
+  color: goldenrod;
+    font-size: 40px;
+    font-weight: 800;
+}
+.details .backBtn{
+  background-color: white;
+  color: black;
+  border-radius: 2rem;
+  padding: 10px 20px;
+}
+.details .backBtn:hover{
+  color: black;
+  background-color: rgb(189, 189, 189);
+}
+.details .otherDetails{
+  font-weight: 300;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.732);
+  text-align: left;
+  text-transform: capitalize;
+}
+.details .opBtn{
+  width: 100%;
+  transition: .5s ease;
+  background-color: rgba(167, 167, 167, 0.196);
+  color: rgb(255, 255, 255);
+}
+.details .opBtn:hover{
+    background-color: rgba(167, 167, 167, 0.196);
+  color: rgb(255, 255, 255);
+}
+.goldClr{
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+.acc{
+      font-family: 'Poppins', sans-serif;
+width: 25rem;
+text-align: left;
+font-weight: 400;
+text-transform: capitalize;
+font-size: 20px;
+}
+@media only screen and (max-width:768px) {
+  .mainDetails{
+    padding-right: 0;
   }
-  to {
-    transform: rotate(360deg);
-  }
+ .single{
+  
+  display: grid;
+  grid-template-columns: 1fr,1fr;
+ }
+ .acc{
+  width: 18rem;
+ }
+ .carHeading{
+ padding-bottom: 130px;
+  font-size: 30px;
+ }
+ .carHeading2{
+  font-size: 35px;
+  padding-bottom: 100px;
+ }
+ .carImg{
+  object-fit: cover;
+  object-position: -350px;
+ }
+ .carImg1{
+  object-position: -400px;
+ }
+ .container{
+  display: block;
+ }
+.cardBut{
+  width: 250px;
+}
+.footer .foot{
+  padding-right: 100px;
+
+}
 }
